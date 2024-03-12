@@ -69,13 +69,16 @@ main > section {
 
 /***** Header *****/
 
+header {
+    background-color: white;
+}
+
 /***** Projects *****/
 
 .projects {
     display: grid;
     align-content: flex-start;
     grid-template-columns: 1fr 1fr;
-    background-color: orange;
     gap: 20px;
     padding: 0 20px;
 }
@@ -86,14 +89,39 @@ main > section {
 }
 
 .project {
-    border: 1px solid black;
-    padding: 10px;
+    padding: 20px 10px 10px 20px;
     background-color: white;
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    box-shadow: 2px 4px 3px #ccc;
+}
+
+.project-tab-color {
+    background-color: rgb(248, 192, 89);
+    height: 100%;
+    position: absolute;
+    width: 7px;
+    left: 0;
+    top: 0;
 }
 
 .project > h3 {
     margin: 0 0 -10px;
+}
+
+.project-icons > svg {
+    width: 30px;
+    height: 30px;
+}
+
+.project-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: auto;
 }
 
 /***** Announcements & Trending *****/
