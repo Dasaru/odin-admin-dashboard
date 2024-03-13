@@ -67,10 +67,27 @@ main > section {
     font-weight: bold;
 }
 
+.card {
+    box-shadow: 2px 4px 3px #ccc;
+    background-color: white;
+    border-radius: 10px;
+}
+
 /***** Header *****/
 
 header {
     background-color: white;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.greeting img {
+    width: 70px;
+    height: 70px;
 }
 
 /***** Projects *****/
@@ -90,13 +107,10 @@ header {
 
 .project {
     padding: 20px 10px 10px 20px;
-    background-color: white;
-    border-radius: 10px;
     position: relative;
     overflow: hidden;
     display: flex;
     flex-flow: column;
-    box-shadow: 2px 4px 3px #ccc;
     min-width: 200px;
 }
 
@@ -132,5 +146,18 @@ header {
 }
 
 .trending {
-    background-color: purple;
+    /* background-color: purple; */
+    padding: 20px;
+}
+
+.trending ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.trend-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
