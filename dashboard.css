@@ -97,6 +97,7 @@ header {
     display: flex;
     flex-flow: column;
     box-shadow: 2px 4px 3px #ccc;
+    min-width: 200px;
 }
 
 .project-tab-color {
