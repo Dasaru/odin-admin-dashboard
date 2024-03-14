@@ -77,12 +77,97 @@ main > section {
 
 header {
     background-color: white;
+    display: grid;
+    grid-template-rows: auto auto;
+    box-shadow: 0 3px 5px #ccc;
+    margin-bottom: 15px;
 }
 
 header img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+.header-top {
+    margin: 20px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header-top > input {
+    margin: 0 30px 0 15px;
+    width: 100%;
+    max-width: 800px;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #eee;
+    padding: 0 10px;
+}
+
+.push-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    font-weight: bold;
+    flex: 1 0 auto;
+}
+
+header svg {
+    min-width: 25px;
+    min-height: 25px;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.header-bottom ul {
+    margin: 0 30px 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-bottom button {
+    border: none;
+    width: 85px;
+    height: 35px;
+    background-color: #00a1d6;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.header-bottom button:hover {
+    cursor: pointer;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.greeting > img {
+    margin-right: 15px;
+}
+
+.greeting span {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.greeting p {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .greeting img {
