@@ -24,7 +24,7 @@ main > section {
     display: flex;
 }
 
-.annoucement-trending-container {
+.announcement-trending-container {
     display: flex;
     flex-flow: column;
     margin-bottom: 30px;
@@ -148,7 +148,11 @@ header img {
 .announcements ul {
     list-style: none;
     margin: 0 20px 0 0;
-    padding: 20px;
+    padding: 5px 20px;
+}
+
+.announcements li:not(:last-child) {
+    border-bottom: 1.5px solid #bbb;
 }
 
 /***** Trending *****/
